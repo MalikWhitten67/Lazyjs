@@ -10,7 +10,7 @@ Its as simple as this -
 
 // adds two numbers together
 var number = Add(1, 20)
-var divide = Add(2, 10)
+var divide = Divide(2, 10)
 trace(number + divide)
 ```
 ```
