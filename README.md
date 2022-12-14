@@ -36,7 +36,7 @@ Trace is like console.log() except its simpler for lazy people
 
 example code
 ```js
-unc(
+func(
     // Declarations help organize your code so that it isnt messy!
     main(
         // log to console
