@@ -34,3 +34,5 @@ What does trace do?
 Trace is like console.log() except its simpler for lazy people
 
 
+#release date? soon
+
