@@ -9,12 +9,15 @@ Its as simple as this -
 ```js
 
 // adds two numbers together
-var number = Add(1, 20)
-var sum  = Divide(2, number))
-trace(sum)
+func(
+var addition  = Add(10, 10)
+trace(addition)
+
+)
+
 ```
 ```
-Output: 33! - its that easy
+Output: 20! - its that easy
 ```
 
 
@@ -24,7 +27,8 @@ Why use func? -  the reason is bc u need to keep code clean and concise especial
 func(
  
  trace("Hello world"),
- // always add , between new lines of lazyjs otherwise it will not return the code!
+ 
+  
 
 )
 
@@ -33,6 +37,38 @@ func(
 What does trace do?
 Trace is like console.log() except its simpler for lazy people
 
+##Comments
+
+
+```js
+
+func(
+'this is a single line comment',
+
+"this is a single line comment aswell",
+
+`  
+
+ this is a multiline comment
+,
+`
+
+com(
+`
+
+this here is a simple comment organizer def recommended!
+
+`
+
+
+),
+
+
+)
+
+
+
+```
 
 example code
 ```js
