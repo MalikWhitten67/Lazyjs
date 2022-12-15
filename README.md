@@ -3,7 +3,15 @@
 
 Forget about document.this and simply use lazy its simple and easy aswell as well organized
 
-Its as simple as this - 
+# Benefits of Lazy.js 
+
+* Easier to read and understand code 
+* Reduced complexity and boilerplate code
+* More performant and optimized code 
+* Increased code maintainability 
+* Improved developer productivity
+
+
 ```js
 
 // adds two numbers together
@@ -19,7 +27,9 @@ Output: 20! - its that easy
 ```
 
 
-Why use func? -  the reason is bc u need to keep code clean and concise especially when theirs tons of it, theirs not a requirement just its recommended!
+Why use func? 
+
+Using func helps keep your code clean and concise. It allows you to break up your code into smaller, more manageable chunks and makes it easier to debug and maintain. 
 
 ```js
 func(
@@ -33,38 +43,16 @@ func(
 ```
 
 What does trace do?
-Trace is like console.log() except its simpler for lazy people
+trace is an alternative to console.log - its used to log stuff to your console like traceError traceWarn etc
 
 #Comments
 
 
 ```js
 
-func(
-'this is a single line comment',
-
-"this is a single line comment aswell",
-
-`  
-
- this is a multiline comment
-,
-`
-
-com(
-`
-
-this here is a simple comment organizer def recommended!
-
-`
-
-
-),
-
-
-)
-
-
+trace("Hi lazy users")
+traceError("sending an error")
+traceWarn("you have been warned")
 
 ```
 
