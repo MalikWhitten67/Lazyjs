@@ -37,7 +37,7 @@ func(
 What does trace do?
 Trace is like console.log() except its simpler for lazy people
 
-##Comments
+#Comments
 
 
 ```js
@@ -73,41 +73,55 @@ this here is a simple comment organizer def recommended!
 example code
 ```js
 func(
-    // Declarations help organize your code so that it isnt messy!
+  "Declarations help organize your code so that it isnt messy!",
+  
     main(
-        // log to console
+        "log to console",
         trace('hello world'),
 
-        // log integers you can use this to return a string to integer
-        trace(Integer("test", 300),
+       'log integers you can use this to return a string to integer',
+        trace(Integer("300"),
+        
+        'you can also use the better and more effective way such as',
+        
+        trace(int("200"))
+        
 
 
         ),
-        // get the element with the id = to set parameter
+        "get the element with the id = to set parameter",
         trace(getid("p")),
-        // wait a few seconds then trace add 1 + 10 + string 200
+        " wait a few seconds then trace add 1 + 10 + string 200",
         wait(() => { trace(Add(1, 10) + String('200')) }, 300),
 
     ),
 
-    // use elements constructor to further keep code clean
+   "use elements constructor to further keep code clean",
 
     elements(
-        // create an element
-        MakeElement("body", "span",),
-        // set innerhtml
-        SetHtml(/* this is an id*/'body', '<div><p>hello world</p></div>'),
-        // query an element useful for alot of logical code
+       'create an element;,
+         MakeElement("body", "span",),
+       " easily set inner html",
+        SetHtml(getid("p")', '<div><p>hello world</p></div>'),
+        "u can query for elements aswell",
         trace(query("p")),
 
 
 
-        // styling - this is where u can put element styles!
+       style(
+       
+        com(
+            "this is where you style elements",
+        ),
+      
 
+        "colors",
+          
+        
+        setColor("black", getid("p")),
+        trace(  "hi" )
+     ),
 
-        setBackColor("body", "blue"),
-
-        setColor("blue", "body"),
 
     ),
       
