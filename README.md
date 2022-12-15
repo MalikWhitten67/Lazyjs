@@ -1,9 +1,7 @@
 # Lazy.js
 
 
-what is the purpose of  Lazy.js?
-
- Lazy.js aimes to make js easy for not only new people but also intermediate users to
+Forget about document.this and simply use lazy its simple and easy aswell as well organized
 
 Its as simple as this - 
 ```js
