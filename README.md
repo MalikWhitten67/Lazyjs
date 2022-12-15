@@ -129,6 +129,39 @@ func(
  )
 
 
+
+
+```
+#Original output
+```js
+
+console.log("hello world");
+console.log(parseInt("300"))
+
+console.log(document.getElementById("p"))
+
+setTimeout(
+function() =>{
+
+var num1  = 1
+var num2 = 2
+var stringged = parseInt("200")
+console.log(num1 + num2  + stringed)
+},
+300
+)
+
+
+var el  = document.createElement("span")
+
+el.id = "body"
+
+document.body.appendChild(el)
+
+console.log(document.querySelector("#p"))
+
+el.style.color = "black"
+console.log("hi")
 ```
 #release date? soon
 
