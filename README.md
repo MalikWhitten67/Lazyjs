@@ -38,9 +38,11 @@ LazyJS is a programming language that is designed to make it easier to write and
  }
   "http":{
    "port":8080,
+   // routes is your webpages routing this sets binds /home to the ip
    "routes":{
     "1":"main",
   }
+  // pages is how u bind html files to the router! it returns the variable.main!
   "pages":{
   "1":"main"
  }
