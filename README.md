@@ -1,153 +1,71 @@
-# Lazy js
+# Lazy JS
+
+LazyJS is a programming language that is designed to make it easier to write and manage complex code by reducing the amount of code needed to achieve the desired results. It is based on the JSON object-oriented language and is intended for use in large and complex workflows. LazyJS aims to provide a concise and organized way to write code, while still maintaining the flexibility and power of a full-featured programming language.
 
 
+# Syntax
 
+ lazyjs syntax is relatively simple if you understand json syntax:
+```json
+{
+  /* Variables can be declared for extensive use!*/
+ "variable":{
+  "main":{
+   // there are two value setters currently in v1.0
+   "value":"hello world"
+   // this can also be used to add subtact, multiply and divide
+   "value":"1+2*4/4"
+  }
+  // to get the variable value we can use return this is how we print stuff!
+  "return":"main"
+  // output --> 3
+ }
 
-# Benefits of Lazy.js 
-
-* Easier to read and understand code 
-* Reduced complexity and boilerplate code
-* More performant and optimized code 
-* Increased code maintainability 
-* Improved developer productivity
-
-
-```js
-
-// adds two numbers together
-func(
-var addition  = Add(10, 10)
-trace(addition)
-
-)
-
-```
-```
-Output: 20! - its that easy
-```
-
-
-Why use func? 
-
-Using func helps keep your code clean and concise. It allows you to break up your code into smaller, more manageable chunks and makes it easier to debug and maintain. 
-
-```js
-func(
  
- trace("Hello world"),
+
+}
+```
+
+ ## Features
  
-  
-
-)
-
+<span style="color:#a2c4c9"> Note: as lazy keeps progressing overtime more will be added, here is what v1.0 has</span>
+1. Http Web Server
+```json
+// Simple way to serve html files via lazy js
+{
+  "variable":{
+   "main":"index.html"
+ }
+  "http":{
+   "port":8080,
+   "routes":{
+    "1":"main",
+  }
+  "pages":{
+  "1":"main"
+ }
+ }
+}
 ```
-
-What does trace do?
-trace is an alternative to console.log - its used to log stuff to your console like traceError traceWarn etc
-
-#Comments
-
-
-```js
-
-trace("Hi lazy users")
-traceError("sending an error")
-traceWarn("you have been warned")
-
+2. Virtual Dom
+```json
+"http":{
+   "port":8080,
+   "routes":{
+    "1":"main",
+  }
+  "pages":{
+  "1":"main"
+ }
+ // when dom is used regular static pages do not work!
+ "dom":{
+    // this is the main element when using vdom
+    "div":{
+      "1":"<center>",
+      "2":"<p style='color:#938E8E; font-weight:400; font-size: 70px; font-family:Arial, Helvetica, sans-serif ; position:relative; top:120px '>505</p>",
+      "3":"<p style=' font-family:Arial, Helvetica, sans-serif ; color:#dd6464; position:relative; top:50px;'>This is lazyjs v2.0 Virtual Dom</p>",
+      "4":"</center>"
+    }
+   }
+ }
 ```
-
-example code
-```js
-func(
-  "Declarations help organize your code so that it isnt messy!",
-  
-    main(
-        "log to console",
-        trace('hello world'),
-
-       'log integers you can use this to return a string to integer',
-        trace(Integer("300"),
-        
-        'you can also use the better and more effective way such as',
-        
-        trace(int("200"))
-        
-
-
-        ),
-        "get the element with the id = to set parameter",
-        trace(getid("p")),
-        " wait a few seconds then trace add 1 + 10 + string 200",
-        wait(() => { trace(Add(1, 10) + String('200')) }, 300),
-
-    ),
-
-   "use elements constructor to further keep code clean",
-
-    elements(
-       'create an element;,
-         MakeElement("body", "span",),
-       " easily set inner html",
-        SetHtml(getid("p")', '<div><p>hello world</p></div>'),
-        "u can query for elements aswell",
-        trace(query("p")),
-
-
-
-       style(
-       
-        com(
-            "this is where you style elements",
-        ),
-      
-
-        "colors",
-          
-        
-        setColor("black", getid("p")),
-        trace(  "hi" )
-     ),
-
-
-    ),
-      
-      
- )
-
-
-
-
-```
-#Original output
-```js
-
-console.log("hello world");
-console.log(parseInt("300"))
-
-console.log(document.getElementById("p"))
-
-setTimeout(
-function() =>{
-
-var num1  = 1
-var num2 = 2
-var stringged = parseInt("200")
-console.log(num1 + num2  + stringed)
-},
-300
-)
-
-
-var el  = document.createElement("span")
-
-el.id = "body"
-
-document.body.appendChild(el)
-
-console.log(document.querySelector("#p"))
-
-el.style.color = "black"
-console.log("hi")
-```
-#release date? soon
-
