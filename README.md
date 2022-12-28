@@ -1,7 +1,7 @@
-# Lazy.js
+# Lazy js
 
 
-Forget about document.this and simply use lazy its simple and easy aswell as well organized
+
 
 # Benefits of Lazy.js 
 
